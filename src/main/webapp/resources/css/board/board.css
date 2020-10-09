@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+h1{
+	text-align : center;
+}
+
+div{
+	text-align : center;
+}
+
+th {
+   background-color : #d3d3d3;
+   font-weight : bold;
+}
+
+td {
+   background-color : #F5F5F5;
+}
+
+tr{
+	height: 35px;
+}
+
+table {
+   width : 600px;
+   margin-left: auto;
+   margin-right: auto;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="global.sesoc.locker.dao.boardMapper">
+
+<select id="listBoard" resultType="Board">
+	select *
+	from coin_board
+	order by inputdate desc
+</select>
+
+<insert id="insertBoard" parameterType="Board">
+	insert into coin_board values(
+		coin_seq.nextval,
+		#{id},
+		#{contents},
+		default
+	)
+</insert>
+
+<delete id="deleteBoard" parameterType="int">
+	delete coin_board
+	where boardnum = #{boardnum}
+</delete>
+</mapper>

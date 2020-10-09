@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="global.sesoc.locker.dao.memberMapper">
+
+<insert id="insertMember" parameterType="Member">
+	insert into coin_member values(
+		#{id},
+		#{password},
+		#{name},
+		#{phone},
+		#{email}
+	)
+</insert>
+
+<select id="getMember" parameterType="String" resultType="Member">
+	select *
+	from coin_member
+	where id = #{id}
+</select>
+
+<update id="editMember" parameterType="Member">
+	update coin_member set
+		password = #{password},
+		name = #{name},
+		phone = #{phone},
+		email = #{email}
+	where id = #{id}
+</update>
+</mapper>

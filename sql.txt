@@ -1,0 +1,44 @@
+create table coin_member(
+    id			varchar2(20) primary key,
+	password	varchar2(20) not null,
+	name		varchar2(20) not null,
+	phone		varchar2(20),
+	email		varchar2(50)
+);
+
+create table coin_board (
+	boardnum	number primary key,	
+	id			varchar2(20) not null,
+	contents	varchar2(2000) not null,
+	inputdate	date default sysdate,
+    constraint coin_board_fk foreign key(id)
+    references coin_member(id) on delete cascade
+);
+
+create table coin_lockers(
+   	name		varchar2(20) primary key,
+	region  	varchar2(20) not null,
+	station 	varchar2(20) not null,
+	crow		number not null,
+	cline		number not null,
+    inputdate	date default sysdate
+);
+
+create table coin_num(
+    seqnum      number primary key,
+   	name		varchar2(20) not null,
+    num         number not null,
+    id          varchar2(20) default 0,
+	constraint coin_num_fk foreign key(name)
+    references coin_lockers(name) on delete cascade
+);
+
+create sequence coin_num_seq;
+
+create sequence coin_seq;
+
+--관리자 계정 입력
+insert into coin_member values 
+	('aaa', 'aaa', '관리자', '00000000000', 'aaa@aaa.com');
+
+commit;

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="global.sesoc.locker.dao.lockerMapper">
+<insert id="insertLocker" parameterType="Locker">
+	insert into coin_lockers values(
+		#{name},
+		#{region},
+		#{station},
+		#{crow},
+		#{cline},
+		default
+	)
+</insert>
+
+<insert id="insertlocker" parameterType="LockerNum">
+	insert into coin_num values(
+		coin_num_seq.nextval,
+		#{name},
+		#{num},
+		default
+	)
+</insert>
+
+<select id="getLocker" parameterType="String" resultType="Locker">
+	select *
+	from coin_lockers
+	where name = #{name}
+</select>
+
+<select id="listLocker" resultType="Locker">
+	select *
+	from coin_lockers
+	order by name
+</select>
+
+<delete id="dellock" parameterType="String">
+	delete coin_lockers
+	where name = #{name}
+</delete>
+
+<delete id="delnum" parameterType="String">
+	delete coin_num
+	where name = #{name}
+</delete>
+
+<update id="update" parameterType="Locker">
+	update coin_lockers set
+		region = #{region},
+		station = #{station},
+		crow = #{crow},
+		cline = #{cline}
+	where name = #{name}
+</update>
+
+<select id="searchR" resultType="Locker">
+	select region
+	from coin_lockers
+	group by region
+	order by region
+</select>
+
+<select id="serchStation" parameterType="String" resultType="Locker">
+	select station
+	from coin_lockers
+	where region = #{region}
+	group by station
+	order by station
+</select>
+
+<select id="stationL" parameterType="Locker" resultType="Locker">
+	select *
+	from coin_lockers
+	where region = #{region} and
+	station = #{station}
+</select>
+
+<select id="getnum" parameterType="String" resultType="LockerNum">
+	select *
+	from coin_num
+	where name = #{name}
+</select>
+
+<update id="lsetid" parameterType="LockerNum">
+	update coin_num set
+		id = #{id}
+	where name = #{name} and
+	num = #{num}
+</update>
+
+<select id="checklocker" parameterType="LockerNum" resultType="LockerNum">
+	select *
+	from coin_num
+	where name = #{name} and
+	num = #{num}
+</select>
+
+<select id="listup" parameterType="String" resultType="LockerNum">
+	select *
+	from coin_num
+	where id = #{id}
+</select>
+
+<update id="returnLocker" parameterType="LockerNum">
+	update coin_num set
+		id = 0
+	where name = #{name} and
+	num = #{num}
+</update>
+</mapper>

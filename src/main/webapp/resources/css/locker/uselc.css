@@ -1,0 +1,47 @@
+@charset "UTF-8";
+h3{
+   text-align : center;
+}
+
+div{
+	text-align : center;
+}
+
+.butt{
+	background-color: #6495ED;
+	border: none;
+	color: white;
+	padding: 30px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.butd{
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 30px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.buts{
+	background-color: #DB7093;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
