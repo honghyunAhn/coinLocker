@@ -10,6 +10,8 @@
 - Database           : Oracle SQL Developer 19.4
 - Web Developement   : HTML、JavaScript、CSS、Ajax
 - Operating Systems  : Windows 10
+- 開発期間 : 2020.2.26~2020.3.8
+
 
 ***
 
