@@ -1,10 +1,10 @@
 # 로커예약
-
 - 사물함을 관리하고 예약하는 웹사이트
 - 사물함 예약 관리 웹사이트를 관리자와 사용자가 사용한다고 생각하고 만들었습니다.
-
+<br>
 
 # Tech/framework used
+
 - Languages          : Java SE 8
 - Frameworks & Tools : Spring 4.5
 - Web Servers        : Apache Tomcat v9.0
@@ -12,13 +12,14 @@
 - Web Developement   : HTML、JavaScript、CSS、Ajax
 - Operating Systems  : Windows 10
 - Development period : 2020.2.26~2020.3.8
-
+<br>
 
 # Motivation
 팀 프로젝트의 주제가 사물함을 예약하는 웹사이트를 만드는 것이었고 팀프로젝트를 하다보니 사물함을 관리하는 기능이 있으면 편하겠다고 생각해서 만들었습니다.
+<br>
+<br>
 
-
-# Screenshots
+# Screenshots & Explanation
 
 - 관리자 계정에 사물함의 상세사항을 입력합니다.
 
@@ -47,7 +48,3 @@
 - 반환 누르면 저장된 ID를 기본값으로 바꿉니다.
 
 ![6](https://user-images.githubusercontent.com/54131117/95628868-d7c26180-0ab9-11eb-9bc2-427733fa8ccf.png)
-
-
-
-
