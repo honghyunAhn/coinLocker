@@ -1,12 +1,10 @@
 # ロッカー予約
 
-***
-
 - ロッカーを管理して予約するウェブサイト
 - 個人プロジェクト : ロッカー予約管理ウェブサイトを管理者に提供するという考えで作りました。
 
-***
 
+# Tech/framework used
 - Languages          : Java SE 8
 - Frameworks & Tools : Spring 4.5
 - Web Servers        : Apache Tomcat v9.0
@@ -16,7 +14,7 @@
 - Development period : 2020.2.26~2020.3.8
 
 
-***
+# Screenshots
 
 - 管理者アカウントにロッカーを入力します。
 
