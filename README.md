@@ -22,28 +22,23 @@
 
  : COIN_LOCKERSデータベースに入力されたすべてのデータを保存します。また、列と行を掛け合わせた数だけのロッカーを作って、COIN_NUMデータベースに保存します。
  
-***
 - 管理者アカウントにロッカーを修正します。 
 
 ![2](https://user-images.githubusercontent.com/54131117/95628862-d5600780-0ab9-11eb-90f8-1d3eb0bed57d.png)
 
-***
 - ユーザーが会員登録後にロッカーを予約します。
 - 登録されている地域名、駅名、ロッカー名だけの項目が追加されます。
 
 ![3](https://user-images.githubusercontent.com/54131117/95628864-d6913480-0ab9-11eb-8af6-f6ec7bb77853.png)
 
-***
 - 使用するとロッカーの色が変わり“使用”と変わります。また、クリックが不可能になります。
 
 ![4](https://user-images.githubusercontent.com/54131117/95628866-d729cb00-0ab9-11eb-8cd7-0ee930c3b212.png)
 
-***
 - 登録されているロッカーを読み込むコード
 
 ![5](https://user-images.githubusercontent.com/54131117/95628867-d729cb00-0ab9-11eb-9cc9-e71cc81932a7.png)
 
-***
 - COIN_NUMのidに保存されているIDとログインIDが一致するとロッカーを読み込みます。
 - 返却を押すと、保存されているIDをデフォルト値に変えます。
 
