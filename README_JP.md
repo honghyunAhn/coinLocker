@@ -2,7 +2,7 @@
 
 - ロッカーを管理して予約するウェブサイト
 - 個人プロジェクト : ロッカー予約管理ウェブサイトを管理者に提供するという考えで作りました。
-
+<br>
 
 # Tech/framework used
 - Languages          : Java SE 8
@@ -12,9 +12,9 @@
 - Web Developement   : HTML、JavaScript、CSS、Ajax
 - Operating Systems  : Windows 10
 - Development period : 2020.2.26~2020.3.8
+<br>
 
-
-# Screenshots
+# Screenshots & Explanation
 
 - 管理者アカウントにロッカーを入力します。
 
