@@ -3,6 +3,10 @@
 - 사물함 예약 관리 웹사이트를 관리자와 사용자가 사용한다고 생각하고 만들었습니다.
 <br>
 
+# Motivation
+팀 프로젝트의 주제가 사물함을 예약하는 웹사이트를 만드는 것이었고 팀프로젝트를 하다보니 사물함을 관리하는 기능이 있으면 편하겠다고 생각해서 만들었습니다.
+<br>
+<br>
 # Tech/framework used
 
 - Languages          : Java SE 8
@@ -12,11 +16,6 @@
 - Web Developement   : HTML、JavaScript、CSS、Ajax
 - Operating Systems  : Windows 10
 - Development period : 2020.2.26~2020.3.8
-<br>
-
-# Motivation
-팀 프로젝트의 주제가 사물함을 예약하는 웹사이트를 만드는 것이었고 팀프로젝트를 하다보니 사물함을 관리하는 기능이 있으면 편하겠다고 생각해서 만들었습니다.
-<br>
 <br>
 
 # Screenshots & Explanation
